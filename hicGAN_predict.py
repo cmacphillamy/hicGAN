@@ -18,7 +18,7 @@ Usage: python hicGAN_predict.py [GPU_ID] [MODEL_FOLDER]  [DATA_PATH] [SAVE_DIR]
 [SAVE_DIR]: save directory for predicted data 
 '''
 if len(sys.argv)!=5:
-    print usage
+    print(usage)
     sys.exit(1)
 
 os.environ["CUDA_VISIBLE_DEVICES"] = sys.argv[1]
